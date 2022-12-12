@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Carrois+Gothic&family=Itim&family=Koulen&family=Readex+Pro&family=Squada+One&display=swap');
+/*
+font-family: 'Anton', sans-serif; --> ICON
+font-family: 'Carrois Gothic', sans-serif; --> SEARCH BAR
+font-family: 'Itim', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Readex Pro', sans-serif; --> NAV LINK
+font-family: 'Squada One', cursive;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    background-color: rgb(1, 172, 224);
+}
+
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* --------------------------------------------------------------- */
+/* --------------------------NAV CONTENT-------------------------- */
+/* --------------------------------------------------------------- */
+
+
+.nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 85px;
+    z-index: 100;
+    box-shadow: 0 1px 10px;
+}
+
+#icon1 {
+    color: gold;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    -webkit-text-stroke: 1.5px black;
+    box-shadow: 0px 1px 10px black;
+    width: 160.5px;
+    padding-left: 3px;
+    border: 5px solid rgb(51, 145, 199);
+}
+
+.nav-icon {
+    background-color: rgb(1, 172, 224);
+    margin-left: 13px;
+}
+
+.nav-main-content {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 34px;
+}
+
+.nav-links {
+    margin-right: 30px;
+    display: flex;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.3s 0.3s ease-out forwards;
+}
+
+.links {
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    font-size: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    margin-left: 30px;
+    transform: scale(100%);
+    transition: 300ms;
+}
+
+.links:hover {
+    transform: scale(110%);
+    transition: 200ms;
+}
+
+.searchbar {
+    width: 215px;
+    height: 42px;
+    border-radius: 15px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 1px 4px 0px;
+    display: flex;
+    margin-right: 30px;
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: apparition 0.5s 0.5s ease-out forwards;
+}
+
+.search {
+    width: 175px;
+    height: 42px;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 0px solid rgba(255, 255, 255, 0);
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-top: 2px solid rgb(238, 238, 238);
+    border-bottom: 2px solid rgb(238, 238, 238);
+    border-left: 2px solid rgb(238, 238, 238);
+    font-family: 'Carrois Gothic', sans-serif;
+    font-weight: 600;
+}
+
+.searchbtn {
+    text-decoration: none;
+    width: 41px;
+    height: 42px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0px solid white;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+#searchbtn {
+    color: black;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    position: static;
+    transform: scale(100%);
+    transition: 150ms;
+}
+
+#searchbtn:hover {
+    transform: scale(107%);
+    transition: 150ms;
+}
+
+#loginbtn {
+    color: black;
+    width: auto;
+    height: auto;
+    font-size: 27.5px;
+    position: static;
+    text-decoration: none;
+    color: gold;
+    -webkit-text-stroke: 1.5px black;
+    transform: translateY(2px);
+    transition: 300ms;
+    margin-bottom: 3px;
+}
+
+#loginbtn:hover {
+    transform: translateY(-2px);
+    transition: 300ms;
+}
+
+#favbtn {
+    color: gold;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    position: static;
+    text-decoration: none;
+    -webkit-text-stroke: 1.4px black;
+    transform: translateY(2px);
+    transition: 300ms;
+    margin-bottom: 3px;
+}
+
+#favbtn:hover {
+    transform: translateY(-2px);
+    transition: 300ms;
+}
+
+#cartbtn {
+    color: gold;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    position: static;
+    text-decoration: none;
+    -webkit-text-stroke: 1.5px black;
+    transform: translateY(2px);
+    transition: 300ms;
+    margin-bottom: 3px;
+}
+
+#cartbtn:hover {
+    transform: translateY(-2px);
+    transition: 300ms;
+}
+
+.nav-fav{
+    transform: translateX(160px);
+    animation: apparition 0.4s 0.2s ease-out forwards;
+}
+
+.nav-auth {
+    margin-left: 17px;
+    transform: translateX(160px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+}
+
+.nav-cart {
+    margin-left: 14px;
+    transform: translateX(160px);
+    animation: apparition 0.6s 0.2s ease-out forwards;
+}
+
+
+/* --------------------------------------------------------------- */
+/* ---------------------------HOME PAGE--------------------------- */
+/* --------------------------------------------------------------- */
+
+.homecontent {
+    border: 2px solid rgb(255, 0, 0);
+    margin-top: 85px;
+    width: 100%;
+    height: 100%;
+}
+
+#homepage {
+    width: 100%;
+    height: 100%;
+}
+
+.hometoppage {
+    margin-top: 25px;
+    width: 100%;
+    height: 800px;
+    border: 2px solid green;
+}
+
+.homemidpage {
+    width: 100%;
+    border: 2px solid rgb(0, 38, 255);
+    justify-content: center;
+    display: flex;
+}
+
+.txt1 {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+}
+
+.title {
+    font-size: 35px;
+    font-family: 'Koulen', cursive;
+    font-weight: 600;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.txt {
+    font-size: 20px;
+    font-family: 'Carrois Gothic', sans-serif;
+    margin-bottom: 30px;
+    padding-left: 200px;
+    font-style: italic;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 0.8s;
+    transition-delay: 0.1s;
+}
