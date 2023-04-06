@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/Image/sac.jpg">
-    <link rel="stylesheet" type="text/css" href="spawn.css">
-    <script src="annimation.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
     <script src="https://kit.fontawesome.com/1928087944.js" crossorigin="anonymous"></script>
-    <title>Market</title>
+    <title>Market Login</title>
 </head>
-
 <body>
     <!-----------------------PAGE NAV BAR CONTENT--------------------------->
     <header class="nav">
@@ -52,31 +50,32 @@
     </header>
     <!------------------------------------------------------------------------------>
     <!-----------------------HOME PAGE CONTENT-------------------------------------->
-    <div class="homecontent">
-        <div class="homepage">
-            <div class="hometoppage">
+    <div class="homelogin">
+        <div class="formbox">
+            <div class="topicon">
+                <img class="icon1 icon2" src="/Image/sac.jpg" alt="Logo Market">
             </div>
-            <div class="homemidpage">
-                <div class="txt1">
-                    <h2 class="title reveal">La marque :</h2>
-                    <p class="txt reveal"><em>Une description de votre entreprise / marque.</em><br><strong>Avec les mots importants ou une phrase d'accroche pour le référencement.</strong></p>
-                    <h2 class="title reveal">Nos objectifs :</h2>
-                    <p class="txt reveal">Vous pouvez les décrires en quelques lignes ici.<br>L'écologie, la qualité, le prix ?<br>Le service après-vente ?</p>
-                </div>
-                <iframe title="Map" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1W3toCsaQCTjz0WVbXNY_A9IvwaTbpTM&ehbc=2E312F" width="640" height="480"></iframe>
+            <div class="loginbox">
+                <h2 class="logintitle"><em>Login</em></h2>
+                <form action="#" method="POST">
+                    <input type="text" name="mail">
+                    <input type="password" name="pswrd">
+                    <input type="submit" value="Log in">
+                </form>
             </div>
         </div>
+    </div>
     <!------------------------------------------------------------------------------>
     <!-----------------------DOWN PAGE CONTENT-------------------------------------->
-            <div class="homedownpage">
-                <div class="down-txt">
-                    <a href="#" class="downpagebtn">Refund policy</a>
-                    <a href="#" class="downpagebtn">Contact us</a>
-                    <a href="#" class="downpagebtn">Newsletter</a>
-                </div>
+    <div class="downpage">  
+        <div class="homedownpage">
+            <div class="down-txt">
+                <a href="#" class="downpagebtn">Refund policy</a>
+                <a href="#" class="downpagebtn">Contact us</a>
+                <a href="#" class="downpagebtn">Newsletter</a>
             </div>
-    <!------------------------------------------------------------------------------>
-    </div>
+        </div>
+    </div> 
+<!------------------------------------------------------------------------------>
 </body>
-
 </html>
