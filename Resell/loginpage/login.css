@@ -22,7 +22,10 @@ font-family: 'Squada One', cursive; --> X
 
 body {
     display: flex;
+    flex-direction: column;
     background-color: rgb(67, 138, 219);
+    width: 100%;
+    height: 950px;
 }
 
 @keyframes apparition{
@@ -231,82 +234,77 @@ body {
 
 
 /* --------------------------------------------------------------- */
-/* ---------------------------HOME PAGE--------------------------- */
+/* ---------------------------LOGIN PAGE-------------------------- */
 /* --------------------------------------------------------------- */
 
-.homecontent {
+.homelogin{
     margin-top: 85px;
     width: 100%;
-    height: 100%;
-}
-
-.homepage {
-    width: 100%;
-    height: 100%;
-}
-
-.hometoppage {
-    margin-top: 25px;
-    width: 100%;
-    height: 600px;
-}
-
-.homemidpage {
-    width: 100%;
-    justify-content: center;
+    height: 760px;
     display: flex;
-    flex-direction: row;
-    background-color: white;
-}
-
-.txt1 {
-    width: 100%;
-    height: 100%;
-    margin-top: 55px;
-    flex-direction: column;
-    display: block;
-    background-color: white;
+    align-items: center;
     justify-content: center;
-    align-content: center;
 }
 
-.title {
-    font-size: 35px;
+.formbox{
+    width: 400px;
+    height: 540px;
+    background-color: rgba(255, 255, 255, 0.671);
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px black;
+    overflow: hidden;
+}
+
+.topicon{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+}
+
+.icon2{
+    width: 60px;
+    transform: translateY(-90px);
+    animation: apparition 0.4s 0.4s ease-out forwards;
+}
+
+.loginbox{
+    width: 100%;
+    height: 440px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logintitle{
     font-family: 'Koulen', cursive;
-    font-weight: 600;
-    padding-left: 100px;
-    padding-top: 10px;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 15px;
 }
 
-.txt {
-    font-size: 20px;
-    font-family: 'Carrois Gothic', sans-serif;
-    margin-bottom: 30px;
-    padding-left: 200px;
-    font-style: italic;
+.logintitle em{
+    font-style: normal;
 }
 
-.reveal{
-    opacity: 0;
-    transform: translateX(-30px);
+.loginbox form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.reveal-visible{
-    opacity: 1;
-    transform: translateX(0px);
-    transition: 0.8s;
-    transition-delay: 0.1s;
-}
-
-.map{
-    width: 1050px;
-    height: 370px;
-    margin-left: auto;
-    margin-right: 5%;
-    border: 0px black solid;
-    box-shadow: 0px 0px 7px black;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.loginbox form input{
+    width: 300px;
 }
 
 /* --------------------------------------------------------------- */
@@ -316,6 +314,7 @@ body {
 .homedownpage{
     width: 100%;
     background-color: rgb(39, 39, 39);
+    display: block;
 }
 
 .down-txt{
