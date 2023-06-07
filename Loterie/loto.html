@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="loto.css">
+    <script src="ge.js" defer></script>
+    <title>Lotterie</title>
+</head>
+<body>
+    <h1 class="tp">LOTO !</h1>
+    <div class="num">
+        <h1 class="t1">Loterie simulateur</h1>
+        <form class="f1" action="">
+            <input name="n1" class="nump" id="n1" min="1" max="49" minlength="1" maxlength="1" type="number" placeholder="Nombre 1">
+            <input name="n2" class="nump" id="n2" min="1" max="49" minlength="1" maxlength="1" type="number" placeholder="Nombre 2">
+            <input name="n3" class="nump" id="n3" min="1" max="49" minlength="1" maxlength="1" type="number" placeholder="Nombre 3">
+            <input name="n4" class="nump" id="n4" min="1" max="49" minlength="1" maxlength="1" type="number" placeholder="Nombre 4">
+            <input name="n5" class="nump" id="n5" min="1" max="49" minlength="1" maxlength="1" type="number" placeholder="Nombre 5">
+        </form>
+        <form class="f2" action="">
+            <input name="nc" class="numc" id="n6" min="1" max="10" minlength="1" maxlength="1" type="number" placeholder="Nombre Chance">
+        </form>
+    </div>
+    <div class="ge">
+        <input name="nbge" class="nge" id="ng" min="1" max="1000" type="number" placeholder="N° Générations">
+        <button name="b" id="bge" class="bge" type="submit">Générer</button>
+    </div>
+    <div class="res">
+        <table class="trs">
+            <caption class="tr">Résultats</caption>
+            <thead class="th">
+                <tr>
+                    <th>N°1</th>
+                    <th>N°2</th>
+                    <th>N°3</th>
+                    <th>N°4</th>
+                    <th>N°5</th>
+                    <th>N°C1</th>
+                    <th>Gains min</th>
+                </tr>
+            </thead>
+            <tbody id="tb" class="tb">
+            </tbody>
+            <thead class="th">
+                <tr>
+                    <th>N°1 win</th>
+                    <th>N°2 win</th>
+                    <th>N°3 win</th>
+                    <th>N°4 win</th>
+                    <th>N°5 win</th>
+                    <th>N°C1 win</th>
+                    <th >Gains Totaux min</th>
+                </tr>
+            </thead>
+            <tbody id="tbt" class="tb">
+            </tbody>
+        </table>
+    </div>
+    <button class="dl" onclick="window.print()">Download page</button>
+</body>
+</html>
