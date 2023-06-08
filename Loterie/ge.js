@@ -41,127 +41,189 @@ bge.addEventListener("click", function (){
                                         alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
                                         break;
                                     default:
-                                        var bontot = 0;
-                                        var gt = 0;
-                                        var bonn1 = 0;
-                                        var bonn2 = 0;
-                                        var bonn3 = 0;
-                                        var bonn4 = 0;
-                                        var bonn5 = 0;
-                                        var bonn6 = 0;
-                                        for(let i=1; i <= ng; i++){
-                                            var bonn = 0;
-                                            var bonnc = 0;
-                                            var g = 0;
+                                        switch(n2){
+                                            case n1:
+                                                    alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                break;
+                                            case n3:
+                                                alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                break;
+                                            case n4:
+                                                alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                break;
+                                            case n5:
+                                                alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                break;
+                                            default:
+                                                switch(n3){
+                                                    case n1:
+                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                        break;
+                                                    case n2:
+                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                        break;
+                                                    case n4:
+                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                        break;
+                                                    case n5:
+                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                        break;
+                                                    default:
+                                                        switch(n4){
+                                                            case n1:
+                                                                alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                break;
+                                                            case n2:
+                                                                alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                break;
+                                                            case n3:
+                                                                alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                break;
+                                                            case n5:
+                                                                alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                break;
+                                                            default:
+                                                                switch(n5){
+                                                                    case n1:
+                                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                        break;
+                                                                    case n2:
+                                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                        break;
+                                                                    case n3:
+                                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                        break;
+                                                                    case n4:
+                                                                        alert("Vous ne pouvez pas choisir deux fois le même numéro parmis les 5.");
+                                                                        break;
+                                                                    default:
+
+                                    var bontot = 0;
+                                    var gt = 0;
+                                    var bonn1 = 0;
+                                    var bonn2 = 0;
+                                    var bonn3 = 0;
+                                    var bonn4 = 0;
+                                    var bonn5 = 0;
+                                    var bonn6 = 0;
+                                    for(let i=1; i <= ng; i++){
+                                        var bonn = 0;
+                                        var bonnc = 0;
+                                        var g = 0;
                                             
-                                            var nr1 = Math.round(Math.random() * (49 - 1) + 1);
-                                            var nr2 = Math.round(Math.random() * (49 - 1) + 1);
-                                            var nr3 = Math.round(Math.random() * (49 - 1) + 1);
-                                            var nr4 = Math.round(Math.random() * (49 - 1) + 1);
-                                            var nr5 = Math.round(Math.random() * (49 - 1) + 1);
-                                            var nr6 = Math.round(Math.random() * (10 - 1) + 1);
+                                        var nr1 = Math.round(Math.random() * (49 - 1) + 1);
+                                        var nr2 = Math.round(Math.random() * (49 - 1) + 1);
+                                        var nr3 = Math.round(Math.random() * (49 - 1) + 1);
+                                        var nr4 = Math.round(Math.random() * (49 - 1) + 1);
+                                        var nr5 = Math.round(Math.random() * (49 - 1) + 1);
+                                        var nr6 = Math.round(Math.random() * (10 - 1) + 1);
                                             
-                                            if(n1==nr1){
-                                                var bonn = bonn + 1;
-                                                var bontot = bontot + 1;
-                                                var bonn1 = bonn1 + 1
-                                            }; 
-                                            if(n2==nr2){
-                                                var bonn = bonn + 1;
-                                                var bontot = bontot + 1;
-                                                var bonn2 = bonn2 + 1
-                                            };
-                                            if(n3==nr3){
-                                                var bonn = bonn + 1;
-                                                var bontot = bontot + 1;
-                                                var bonn3 = bonn3 + 1
-                                            };
-                                            if(n4==nr4){
-                                                var bonn = bonn + 1;
-                                                var bontot = bontot + 1;
-                                                var bonn4 = bonn4 + 1
-                                            };
-                                            if(n5==nr5){
-                                                var bonn = bonn + 1;
-                                                var bontot = bontot + 1;
-                                                var bonn5 = bonn5 + 1
-                                            };
-                                            if(n6==nr6){
-                                                var bonnc = bonnc + 1;
-                                                var bontot = bontot + 1;
-                                                var bonn6 = bonn6 + 1
-                                            };
-                                            /*- Calculs -*/
-                                            if(bonn == 5 && bonnc == 1){
-                                                var g = 2000000;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 5 && bonnc == 0){
-                                                var g = 100000;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 4 && bonnc == 1){
-                                                var g = 1000;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 4 && bonnc == 0){
-                                                var g = 400;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 3 && bonnc == 1){
-                                                var g = 50;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 3 && bonnc == 0){
-                                                var g = 20;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 2 && bonnc == 1){
-                                                var g = 10;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 2 && bonnc == 0){
-                                                var g = 4.40;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 1 && bonnc == 1){
-                                                var g = 2.20;
-                                                var gt = gt + g;
-                                            }
-                                            else if(bonn == 0 && bonnc == 1){
-                                                var g = 2.20;
-                                                var gt = gt + g;
-                                            }
-                                            else {
-                                            };
-                                            /*- Tableau -*/
-                                            let template =`
-                                                        <tr>
-                                                            <td>${nr1}</td>
-                                                            <td>${nr2}</td>
-                                                            <td>${nr3}</td>
-                                                            <td>${nr4}</td>
-                                                            <td>${nr5}</td>
-                                                            <td>${nr6}</td>
-                                                            <td>${g+"$"}</td>
-                                                        </tr>
-                                                            `;
-                                            table.innerHTML += template;
-                                            };
-                                        var gt = Math.round(gt)
-                                        let rtemplate =`
+                                        if(n1==nr1){
+                                            var bonn = bonn + 1;
+                                            var bontot = bontot + 1;
+                                            var bonn1 = bonn1 + 1
+                                        }; 
+                                        if(n2==nr2){
+                                            var bonn = bonn + 1;
+                                            var bontot = bontot + 1;
+                                            var bonn2 = bonn2 + 1
+                                        };
+                                        if(n3==nr3){
+                                            var bonn = bonn + 1;
+                                            var bontot = bontot + 1;
+                                            var bonn3 = bonn3 + 1
+                                        };
+                                        if(n4==nr4){
+                                            var bonn = bonn + 1;
+                                            var bontot = bontot + 1;
+                                            var bonn4 = bonn4 + 1
+                                        };
+                                        if(n5==nr5){
+                                            var bonn = bonn + 1;
+                                            var bontot = bontot + 1;
+                                            var bonn5 = bonn5 + 1
+                                        };
+                                        if(n6==nr6){
+                                            var bonnc = bonnc + 1;
+                                            var bontot = bontot + 1;
+                                            var bonn6 = bonn6 + 1
+                                        };
+                                        /*- Calculs -*/
+                                        if(bonn == 5 && bonnc == 1){
+                                            var g = 2000000;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 5 && bonnc == 0){
+                                            var g = 100000;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 4 && bonnc == 1){
+                                            var g = 1000;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 4 && bonnc == 0){
+                                            var g = 400;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 3 && bonnc == 1){
+                                            var g = 50;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 3 && bonnc == 0){
+                                            var g = 20;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 2 && bonnc == 1){
+                                            var g = 10;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 2 && bonnc == 0){
+                                            var g = 4.40;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 1 && bonnc == 1){
+                                            var g = 2.20;
+                                            var gt = gt + g;
+                                        }
+                                        else if(bonn == 0 && bonnc == 1){
+                                            var g = 2.20;
+                                            var gt = gt + g;
+                                        }
+                                        else {
+                                        };
+                                        /*- Tableau -*/
+                                        let template =`
                                                     <tr>
-                                                        <td>${bonn1}</td>
-                                                        <td>${bonn2}</td>
-                                                        <td>${bonn3}</td>
-                                                        <td>${bonn4}</td>
-                                                        <td>${bonn5}</td>
-                                                        <td>${bonn6}</td>
-                                                        <td>${gt+"$"}</td>
+                                                        <td>${nr1}</td>
+                                                        <td>${nr2}</td>
+                                                        <td>${nr3}</td>
+                                                        <td>${nr4}</td>
+                                                        <td>${nr5}</td>
+                                                        <td>${nr6}</td>
+                                                        <td>${g+"$"}</td>
                                                     </tr>
-                                                            `;
-                                        rtable.innerHTML += rtemplate;
+                                                        `;
+                                        table.innerHTML += template;
+                                        };
+                                    var gt = Math.round(gt)
+                                    let rtemplate =`
+                                                <tr>
+                                                    <td>${bonn1}</td>
+                                                    <td>${bonn2}</td>
+                                                    <td>${bonn3}</td>
+                                                    <td>${bonn4}</td>
+                                                    <td>${bonn5}</td>
+                                                    <td>${bonn6}</td>
+                                                    <td>${gt+"$"}</td>
+                                                </tr>
+                                                        `;
+                                    rtable.innerHTML += rtemplate;
                                 };
+                                }; /* Les switch*/
+                                };
+                                };
+                                };
+                            
                             }
                             else /* N°C vérif */
                             alert("Le numéro chance est compris entre 1 à 10 inclus.                             Votre numéro chance n'est pas inclus.");
